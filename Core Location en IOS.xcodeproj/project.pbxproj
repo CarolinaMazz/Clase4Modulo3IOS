@@ -96,6 +96,7 @@
 				TargetAttributes = {
 					FB8454041E97110F00A24196 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 6UK6WGBK4Q;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -258,9 +259,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6UK6WGBK4Q;
 				INFOPLIST_FILE = "Core Location en IOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "pe.sulca.Core-Location-en-IOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "Core-Location";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -270,9 +273,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6UK6WGBK4Q;
 				INFOPLIST_FILE = "Core Location en IOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "pe.sulca.Core-Location-en-IOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "Core-Location";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
