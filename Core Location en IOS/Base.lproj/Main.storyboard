@@ -33,18 +33,26 @@
                                 <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Cordenadas:" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o8p-JV-oTf">
-                                <frame key="frameInset" minX="16" minY="174" width="288" height="374"/>
+                                <frame key="frameInset" minX="16" minY="174" width="288" height="256"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="882-Ag-ECk">
-                                <frame key="frameInset" minX="87" minY="93" width="147" height="30"/>
+                                <frame key="frameInset" minX="87" minY="95" width="147" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Activar Core Location"/>
                                 <connections>
                                     <action selector="btnActivarTouch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HgB-py-Msg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eO4-1V-qeG">
+                                <frame key="frameInset" minX="96" minY="491" width="128" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Solicitar Ubicacion"/>
+                                <connections>
+                                    <action selector="btnSolicitar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KHi-dV-4td"/>
                                 </connections>
                             </button>
                         </subviews>

@@ -20,6 +20,10 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         // Do any additional setup after loading the view, typically from a nib.
         //cada cuanto va a tomar la ubicacion mientras mas lejos menos bateria consume
         manager.desiredAccuracy = kCLLocationAccuracyThreeKilometers
+        //se delimita manualmente cada cuanto altualizar la ubicacion
+        manager.distanceFilter = 5 //metros
+        //ubicacion actual
+        
         manager.delegate = self
     }
 
@@ -35,6 +39,15 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
             manager.requestAlwaysAuthorization();
             
         }
+        
+    }
+    
+    @IBAction func btnSolicitar(_ sender: UIButton) {
+        //manager.requestLocation()
+        let ubicacion = manager.location
+        let coordenadas = ubicacion?.coordinate
+        
+        textView.text = textView.text + "\n Solicitada [\((coordenadas?.latitude)!), \((coordenadas?.longitude)!)]  "
         
     }
     
@@ -58,5 +71,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         
     }
     
+    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
+        
+    }
 }
 
